@@ -43,7 +43,7 @@ namespace Snowflake.Data.Core.Authenticator
 
         /// <see cref="BaseAuthenticator.SetSpecializedAuthenticatorData(ref LoginRequestData)"/>
         protected override void SetSpecializedAuthenticatorData(ref LoginRequestData data)
-        {
+            {
             // Add the token to the Data attribute
             data.Token = session.properties[SFSessionProperty.TOKEN];
             // Remove the login name for an OAuth session
